@@ -1,0 +1,28 @@
+.row1,.row2,.row3
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.text
+{
+    font-size: 50px;
+}
+.order-button
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    background-color: blue;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+.order-button:hover
+{
+    background-color: black;
+}
+.image
+{
+    border-radius: 20px;
+}

@@ -1,0 +1,12 @@
+.allrow
+{
+    display: flex;
+}
+.coat:hover
+{
+    cursor: pointer;
+    transform: rotate(30deg);
+    transition: 3s;
+    transition-duration: 3s;
+    transition-delay: 100ms;
+}

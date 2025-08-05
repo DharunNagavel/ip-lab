@@ -4,54 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <nav>
+    <nav style="display: flex; align-items: center;justify-content: space-between;">
         <div>
-            <h1>DN Style Online Shopping</h1>
+                <h1 style="font-size: 40px;">DN Style Online Shopping</h1>
         </div>
-        <div>
-            <a href="home.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="cart.html">Cart</a>
-            <a href="signin.html">SignIn</a>
+        <div style="display: flex;">
+            <div style="margin-right: 60px;padding: 8px;" class="nav-link">
+                <a href="home.html" style="font-size: 30px;text-decoration: none; color: white;">Home</a>
+            </div>
+            <div style="margin-right: 60px;padding: 8px;" class="nav-link">
+                <a href="shop.html"   style="font-size: 30px;text-decoration: none; color: white;">Shop</a>
+            </div>
+            <div style="margin-right: 60px;padding: 8px;" class="nav-link">
+                <a href="cart.html"  style="font-size: 30px;text-decoration: none; color: white;">Cart</a>
+            </div>
+            <div style="margin-right: 20px;padding: 8px;" class="nav-link">
+                <a href="signin.html" style="font-size: 30px;text-decoration: none; color: white;">SignIn</a>
+            </div>
         </div>
     </nav>
+    <hr>
     <center>
-        <section>
+        <section style="padding: 100px;">
             <form action="">
-                <p>Name</p>
-                <input type="text" placeholder="Enter the Name">
-                <p>Quantity</p>
-                <select>
-                    <option value="">Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-                <p>Address</p>
-                <textarea placeholder="Address"></textarea><br><br>
-                <button>Order</button>
+                <div class="form">
+                    <div style="margin-left: 70px;">
+                        <label>Name <span style="margin-left: 60px;">:</span></label>
+                        <input type="text" class="input" placeholder="Enter the Name">
+                    </div>
+                    <div style="margin-right: 130px;">
+                        <label>Quantity <span style="margin-left: 60px;">:</span></label>
+                        <select class="input">
+                            <option value="">Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <label>Address <span style="margin-left: 60px;">:</span></label>
+                        <textarea class="input" placeholder="Address"></textarea><br><br>
+                    </div>
+                    <div>
+                        <button>Order</button>
+                    </div>
+                </div>
             </form>
         </section>
     </center>
+    <hr>
     <footer>
+    <div style="display: flex;justify-content: space-evenly;">
         <div>
-            <h5>copyright</h5>   
+            <h1 style="font-weight: normal;margin-top: 80px;">Copyright 2025</h1>   
         </div>
         <div>
-            <h2>Quick Links</h2>
-            <h6><a href="home.html">Home</a></h6>
-            <h6><a href="shop.html">Shop</a></h6>
-            <h6><a href="cart.html">cart</a></h6>
-            <h6><a href="signin.html">SignIn</a></h6>
+            <h2 style="color: rgb(0, 0, 77);">Quick Links</h2>
+            <div style="margin-left: 20px;">
+                <div class="nav-link" style="text-align: center;padding: 8px;">
+                    <a href="home.html" style="font-size: 20px;text-decoration: none; color: white;">Home</a>
+                </div>
+                <div style="margin: 10px 0px;text-align: center;padding: 8px;" class="nav-link">
+                    <a href="shop.html" style="font-size: 20px;text-decoration: none; color: white;">Shop</a>
+                </div>
+                <div style="margin: 10px 0px;text-align: center;padding: 8px;" class="nav-link">
+                    <a href="cart.html" style="font-size: 20px;text-decoration: none; color: white;">cart</a>
+                </div>
+                <div class="nav-link" style="text-align: center;padding: 8px;">
+                    <a href="signin.html" style="font-size: 20px;text-decoration: none; color: white;">SignIn</a>
+                </div>
+            </div>
         </div>
         <div>
-            <h2>Social Links</h2>
-            <h4><a href="">Facebook</a></h4>
-            <h4><a href="">Linkedin</a></h4>
-            <h4><a href="">Whatsapp</a></h4>
+            <h2 style="color: rgb(0, 0, 77);">Social Links</h2>
+            <h4 class="nav-link" style="text-align: center;padding: 8px;"><a href="" style="font-size: 20px;text-decoration: none; color: white;">Facebook</a></h4>
+            <h4 class="nav-link" style="text-align: center;padding: 8px;"><a href="" style="font-size: 20px;text-decoration: none; color: white;">Linkedin</a></h4>
+            <h4 class="nav-link" style="text-align: center;padding: 8px;"><a href="" style="font-size: 20px;text-decoration: none; color: white;">Whatsapp</a></h4>
         </div>
+    </div>
    </footer>
 </body>
+<style>
+    body
+    {
+        background-color: gray;
+        color: white;
+    }
+    .nav-link:hover
+    {
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+    }
+</style>
 </html>
